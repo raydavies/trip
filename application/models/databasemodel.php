@@ -1,4 +1,5 @@
 <?php
+require('../../config.php');
 class Database {
 
 	public $mysqli;
@@ -12,8 +13,7 @@ class Database {
 
 	public function __construct()
 	{
-		require_once('config.php');
-		$this->config = Config::get_configs();
+		$this->config = $config;
 		$this->host = $this->config['host'];
 		$this->username = $this->config['username'];
 		$this->password = $this->config['password'];
