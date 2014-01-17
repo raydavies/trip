@@ -12,4 +12,3 @@ error_log
 .htaccess
 *~
 *.swp
-*.sql
