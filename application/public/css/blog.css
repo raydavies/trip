@@ -1,0 +1,212 @@
+/***** RESET *****/
+
+html, body {
+	width:100%;
+	margin:0px;
+	padding:0px;
+	font-size:16px;
+	font-weight:normal;
+	font-family:"Times New Roman", "Times", serif;
+	line-height:1em;
+	text-align:center;
+	-webkit-text-size-adjust:none;
+	-moz-text-size-adjust:none;
+	cursor:default;	
+}
+
+a {
+	text-decoration:none;
+	color:#000000;
+}
+
+img {
+	border:none;
+}
+
+table {
+	border-collapse:collapse;
+}
+
+p {
+	margin:0px;
+	padding:0px;
+}
+
+/***** FONTS *****/
+
+h1,h2,h3,h4,h5,h6 {
+	font-family:"Nevis", "Georgia", serif;
+	font-weight:normal;
+	line-height:1em;
+	margin:0px;
+	padding:0px;
+}
+
+a {
+	font-family:"rosewood-std-fill", "Times New Roman", serif;
+}
+
+/***** HOMEPAGE *****/
+
+body {
+	background-image: url('../img/frames/lined_paper.jpg'), url('../img/bg/flag.jpg');
+	background-position: center top, left top;
+	background-repeat: repeat-y; no-repeat;
+	background-size: 756px 1044px, cover;
+}
+
+#head_wrapper {
+	width: 100%;
+}
+
+#header {
+	width:756px;
+	margin: 0 auto;
+	padding: 15px 0 10px;
+}
+
+#title h1 {
+	font-size:4.3em;
+	line-height:1em;
+	margin:0px;
+}
+
+#container {
+	width:756px;
+	margin: 10px auto 0;
+}
+
+nav {
+	margin:0px auto;
+	padding:0px 10px;
+	font-size: 1.3em;
+}
+
+nav ul {
+	margin: 20px 0px;
+	width: 100%;
+	padding: 0px;
+}
+
+nav li {
+	display: inline-block;
+	margin: 0 7px;
+	padding:5px 13px;
+	-webkit-border-radius:8px;
+	-moz-border-radius:8px;
+	border-radius:8px;
+	text-shadow:1px 1px 0px #fff;
+	-webkit-transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+	transition: all 0.2s ease-in-out;
+}
+
+nav li:hover {
+	background:#093A64;
+	color:#fff;
+	text-shadow: -1px -1px 0px rgba(0,0,0,0.5);
+}
+
+#blog_wrapper {
+	width:600px;
+	margin:0 15px 0 120px;
+	text-align:left;
+	font-size: 1.1em;
+	line-height: 1.1em;
+}
+
+#blog_wrapper p {
+	margin-bottom:15px;
+}
+
+.entry-date {
+	font-family:"rosewood-std-fill", "Times New Roman", serif;
+	font-size:1.3em;
+}
+
+textarea {
+	font-size:1.1em;
+	width:500px;
+	height:300px;
+	margin:10px auto;
+	padding:10px;
+}
+
+input[type='submit'] {
+	margin:5px 0px 20px;
+	padding:0px 15px;
+	font-family:'FontleroyBrownRegular';
+	font-size:2.5em;
+	line-height:1em;
+	border-radius:30px;
+	box-shadow:0px 0px 3px 3px rgba(0,0,0,0.8);
+	cursor: pointer;
+}
+
+#backlink {
+	display: block;
+	margin: 0 0 5px;
+	font-size:1.8em;
+}
+
+/***** MEDIA QUERIES *****/
+
+@media screen and (max-width:780px){
+	
+	#container {
+		width:100%;
+	}
+
+	#head_wrapper, #header {
+		width:100%;
+	}
+
+	#title h1 {
+		font-size:2.5em;
+	}
+
+	#blog_wrapper {
+		width:90%;
+		margin:0 auto;
+	}
+
+	.entry-date {
+		font-size:1.1em;
+	}
+
+	#backlink {
+		font-size:1.5em;
+	}
+
+}
+
+@media screen and (max-width:560px){
+	textarea {
+		width:85%;
+	}
+}
+
+@media screen and (max-width:420px){
+
+	#title h1 {
+		font-size:2.1em;
+	}
+
+	#header {
+		padding: 15px 0 0;
+	}
+
+	nav {
+		font-size: 1.1em;
+	}
+
+	nav li {
+		width:100px;
+		margin: 0;
+	}
+
+	#blog_wrapper {
+		font-size: 1em;
+	}
+}
