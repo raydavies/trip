@@ -1,9 +1,14 @@
 <?php
 if (isset($_SERVER['REQUEST_URI']))
 {
-	define('BASEPATH', $_SERVER['DOCUMENT_ROOT'].'/trip');
-	define('APPPATH', BASEPATH.'/controllers');
-	define('VIEWPATH', BASEPATH.'/views');
+	define('BASEPATH', $_SERVER['DOCUMENT_ROOT']);
+	define('APPPATH', BASEPATH.'/application');
+	define('VIEWPATH', APPPATH.'/views');
+    
+    require_once '../vendor/autoload.php';
+
+    $finder = new Symfony\Component\Finder\Finder();
+    $finder->in(APPPATH.'/controllers')->in('./vendor/');
 
 	$params = array();
 	$uri = $_SERVER['REQUEST_URI'];
@@ -47,7 +52,7 @@ if (isset($_SERVER['REQUEST_URI']))
 	}
 	else
 	{*/
-		include_once(APPPATH.'/page.php');
+		//include_once(APPPATH.'/page.php');
 	//}
 }
 ?>
